@@ -1,4 +1,5 @@
 import type { ICoords } from 'src/game/types';
+import type { IMovingBehaviorConfig } from '../types';
 
 export class MovingBehavior {
   private from: ICoords;
@@ -18,11 +19,7 @@ export class MovingBehavior {
     };
   }
 
-  constructor(config: {
-    from: ICoords;
-    to: ICoords;
-    speed: ICoords;
-  }) {
+  constructor(config: IMovingBehaviorConfig) {
     this.from = config.from;
     this.to = config.to;
     this.speed = config.speed;
