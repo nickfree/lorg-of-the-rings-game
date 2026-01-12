@@ -1,0 +1,1 @@
+export { MovingPlatform } from './model';

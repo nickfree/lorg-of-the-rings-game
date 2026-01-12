@@ -1,0 +1,1 @@
+export { MovingBehavior } from './MovingBehavior';
